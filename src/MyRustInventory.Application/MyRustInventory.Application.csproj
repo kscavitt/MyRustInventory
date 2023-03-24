@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\Interfaces\IDataService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="Common\Models\" />
+    <Folder Include="Steam\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyRustInventory.Client\MyRustInventory.Client.csproj" />
+    <ProjectReference Include="..\MyRustInventory.Domain\MyRustInventory.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

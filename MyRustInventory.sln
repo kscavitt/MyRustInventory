@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRustInventory", "src\MyRustInventory\MyRustInventory.csproj", "{3AAD20B8-9101-44CA-B885-8AD59246890C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRustInventory.Core", "src\MyRustInventory.Core\MyRustInventory.Core.csproj", "{99FE1947-C064-40C6-9AAB-D355CF7C8676}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRustInventory.Client", "src\MyRustInventory.Client\MyRustInventory.Client.csproj", "{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRustInventory.Application", "src\MyRustInventory.Application\MyRustInventory.Application.csproj", "{074DE47E-496E-4682-A61E-7DF7372527C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRustInventory.Domain", "src\MyRustInventory.Domain\MyRustInventory.Domain.csproj", "{C448D0E4-2756-451E-88CF-0782D266DF0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRustInventory.Infrastructure", "src\MyRustInventory.Infrastructure\MyRustInventory.Infrastructure.csproj", "{A20324B2-A78F-451B-960A-0B09EE717391}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AAD20B8-9101-44CA-B885-8AD59246890C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAD20B8-9101-44CA-B885-8AD59246890C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAD20B8-9101-44CA-B885-8AD59246890C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAD20B8-9101-44CA-B885-8AD59246890C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FE1947-C064-40C6-9AAB-D355CF7C8676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FE1947-C064-40C6-9AAB-D355CF7C8676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FE1947-C064-40C6-9AAB-D355CF7C8676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FE1947-C064-40C6-9AAB-D355CF7C8676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074DE47E-496E-4682-A61E-7DF7372527C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074DE47E-496E-4682-A61E-7DF7372527C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074DE47E-496E-4682-A61E-7DF7372527C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074DE47E-496E-4682-A61E-7DF7372527C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C448D0E4-2756-451E-88CF-0782D266DF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C448D0E4-2756-451E-88CF-0782D266DF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C448D0E4-2756-451E-88CF-0782D266DF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C448D0E4-2756-451E-88CF-0782D266DF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20324B2-A78F-451B-960A-0B09EE717391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20324B2-A78F-451B-960A-0B09EE717391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20324B2-A78F-451B-960A-0B09EE717391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20324B2-A78F-451B-960A-0B09EE717391}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E0319F6-C0CB-4B55-8865-2D17D3D07239}
+	EndGlobalSection
+EndGlobal
