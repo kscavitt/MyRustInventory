@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRustInventory", "src\MyRustInventory\MyRustInventory.csproj", "{3AAD20B8-9101-44CA-B885-8AD59246890C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRustInventory.Client", "src\MyRustInventory.Client\MyRustInventory.Client.csproj", "{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRustInventory.Application", "src\MyRustInventory.Application\MyRustInventory.Application.csproj", "{074DE47E-496E-4682-A61E-7DF7372527C6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRustInventory.Domain", "src\MyRustInventory.Domain\MyRustInventory.Domain.csproj", "{C448D0E4-2756-451E-88CF-0782D266DF0A}"
@@ -23,10 +21,6 @@ Global
 		{3AAD20B8-9101-44CA-B885-8AD59246890C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AAD20B8-9101-44CA-B885-8AD59246890C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AAD20B8-9101-44CA-B885-8AD59246890C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DE7DB04-C0F9-4734-ACEE-46B7D9EC5636}.Release|Any CPU.Build.0 = Release|Any CPU
 		{074DE47E-496E-4682-A61E-7DF7372527C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{074DE47E-496E-4682-A61E-7DF7372527C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{074DE47E-496E-4682-A61E-7DF7372527C6}.Release|Any CPU.ActiveCfg = Release|Any CPU

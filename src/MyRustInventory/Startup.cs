@@ -1,7 +1,6 @@
 ﻿using Microsoft.OpenApi.Models;
-using MyRustInventory.Client;
 using MyRustInventory.Application;
-
+using MyRustInventory.Infrastructure;
 namespace MyRustInventory
 {
     public class Startup
@@ -28,9 +27,11 @@ namespace MyRustInventory
             });
 
             services.AddMyRustInventoryApplicationServices();
-            services.AddMemoryCache();
+
+            services.AddMyRustInventoryInfrastructureServices();
+
             // Add services to the container.
-            services.AddMyRustInventoryClient();
+           // services.AddMyRustInventoryClient();
             services.AddControllersWithViews();
 
             services.AddSwaggerGen(c =>

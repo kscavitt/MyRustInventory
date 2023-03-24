@@ -8,6 +8,7 @@ const PROXY_CONFIG = [
     context: [
       "/Steam/GetInventory",
       "/Steam/GetMarketData",
+      "/swagger"
    ],
     target: target,
     secure: false,

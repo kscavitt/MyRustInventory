@@ -1,6 +1,6 @@
 ﻿using MediatR;
+using MyRustInventory.Application.Common.Interfaces;
 using MyRustInventory.Application.Steam.Queries.GetInventory;
-using MyRustInventory.Client;
 using MyRustInventory.Domain.Common;
 
 namespace MyRustInventory.Application.Steam.Handlers;
@@ -8,9 +8,11 @@ namespace MyRustInventory.Application.Steam.Handlers;
 public class GetInventoryQueryHandler : IRequestHandler<GetInventoryQuery, RustItemsResponse>
 {
     private readonly ISteamClient _steamClient;
+ 
+
     public GetInventoryQueryHandler(ISteamClient steamClient)
     {
-        _steamClient = steamClient;
+        _steamClient = steamClient ?? throw new ArgumentNullException(nameof(steamClient));
     }
 
     public async Task<RustItemsResponse> Handle(GetInventoryQuery request, CancellationToken cancellationToken)

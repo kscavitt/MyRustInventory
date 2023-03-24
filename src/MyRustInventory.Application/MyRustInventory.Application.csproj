@@ -11,13 +11,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Interfaces\" />
     <Folder Include="Common\Models\" />
     <Folder Include="Steam\Commands\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyRustInventory.Client\MyRustInventory.Client.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MyRustInventory.Domain\MyRustInventory.Domain.csproj" />
   </ItemGroup>
 

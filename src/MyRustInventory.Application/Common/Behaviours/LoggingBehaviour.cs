@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using MediatR.Pipeline;
 using Microsoft.Extensions.Logging;
 
 namespace MyRustInventory.Application.Common.Behaviours

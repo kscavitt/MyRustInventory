@@ -1,6 +1,7 @@
 ﻿using MediatR;
+using MyRustInventory.Application.Common.Interfaces;
 using MyRustInventory.Application.Steam.Queries.GetMarketData;
-using MyRustInventory.Client;
+
 using MyRustInventory.Domain.Common;
 
 namespace MyRustInventory.Application.Steam.Handlers;
