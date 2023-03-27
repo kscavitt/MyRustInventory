@@ -1,4 +1,4 @@
-﻿namespace MyRustInventory.Domain.Common 
+﻿namespace MyRustInventory.Domain.Common
 { 
     public class RustItemDto
     {
@@ -20,7 +20,7 @@
         public List<Tag>? Tags { get; set; }
 
         public string? Assetid { get; set; }
-        public string? Amount { get; set; }
-        public string? LowestPrice { get; set; }
+        public decimal? Quantity { get; set; }
+        public decimal? LowestPrice { get; set; }
     }
 }

@@ -4,9 +4,11 @@ namespace MyRustInventory.Application.Common.Interfaces
 {
     public interface ISteamClient
     {
-        public Task<RustItemsResponse> GetInventory(string steamId);
-        public Task<string> GetInventoryItemImage(string imageId);
-        public Task<MarketDataResponse> GetMarketData(string mhn, int currency = 1);
-        public Task<MarketDataResponse> GetMarketData(string mhn,string assetId, int currency = 1);
+        Task<List<RustItemDto>> GetInventory(string steamId);
+        Task<string> GetInventoryItemImage(string imageId);
+        Task<MarketDataResponse> GetMarketData(string mhn, int currency = 1);
+        Task<MarketDataResponse> GetMarketData(string mhn,string assetId, int currency = 1);
+        bool DoLogin(string username, string password);   
+
     }
 }

@@ -1,0 +1,35 @@
+<h1 id="tableLabel">Rust Inventory</h1>
+
+<p *ngIf="!rustItems.length"><em>Loading...</em></p>
+<div *ngIf="currentPercentage < 100">
+  <div>
+    Fetching Market Data {{currentPercentage}}%
+  </div>
+  <div>
+    <mat-progress-bar class="example-margin" color="warm" mode="determinate" [value]="currentPercentage">
+    </mat-progress-bar>
+  </div>
+</div>
+<div>Total Unique Items Owned: {{totalTradableItems | async}}</div>
+<div>Total Value: {{ total | currency }}</div>
+<div>&nbsp;</div>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="rustItems.length">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th class="center-th">Item Image</th>
+      <th class="center-th">Owned</th>
+      <th class="center-th">Market Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of rustItems">
+      <td>{{ item.name }}</td>
+      <td class="center-td"><img [src]="item.iconUrl" width="100" height="100" alt="{{ item.description }}"></td>
+      <td class="center-td">{{ item.quantity }}</td>
+      <td class="center-td" *ngIf="!item.lowestPrice">--</td>
+      <td class="center-td" *ngIf="item.lowestPrice > 0 ">{{ item.lowestPrice | currency}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -18,8 +18,8 @@ namespace MyRustInventory.Controllers
         }
 
         [DisableCors]
-        [HttpGet("GetInventory")]
-        public async Task<RustItemsResponse> GetInventory(string steamId = "76561198012083287")
+        [HttpGet("GetInventory/{steamId}")]
+        public async Task<List<RustItemDto>> GetInventory(string steamId = "76561198012083287")
         {
 
             return await _mediator.Send(new GetInventoryQuery { SteamId = steamId });

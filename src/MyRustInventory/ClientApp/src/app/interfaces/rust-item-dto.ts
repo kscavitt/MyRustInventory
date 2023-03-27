@@ -16,8 +16,8 @@ export interface RustItemDto {
   marketMarketableRestriction: number | null;
   marketable: number | null;
   tags: Tag[] | null;
-  amount: string | null;
+  quantity: number | 1;
   assetid: string | null;
   marketHashName: string | null;
-  lowestPrice: string | null;
+  lowestPrice: number | 0.00;
 }
